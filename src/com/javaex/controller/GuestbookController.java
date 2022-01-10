@@ -23,7 +23,7 @@ public class GuestbookController extends HttpServlet {
 		String act = request.getParameter("action");
 		
 		if("addList".equals(act)) {
-			System.out.println("action=addList");
+			
 			GuestbookDao guestbookDao = new GuestbookDao();
 			List<GuestbookVo> gList = guestbookDao.getList();
 			
