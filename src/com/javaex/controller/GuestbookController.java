@@ -59,7 +59,7 @@ public class GuestbookController extends HttpServlet {
 			request.setAttribute("no", no);
 			
 			//포워드
-			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/deleteForm.jsp");//옮겨갈 경로
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/deleteForm.jsp");
 			rd.forward(request, response);
 			
 		} else if ("delete".equals(act)) {
