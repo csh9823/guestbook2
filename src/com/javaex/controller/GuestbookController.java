@@ -45,7 +45,7 @@ public class GuestbookController extends HttpServlet {
 			//dao 메모리에 올린다
 			GuestbookDao guestbookDao = new GuestbookDao();
 			
-			//dao.insert();
+			
 			guestbookDao.guestbookInsert(guestbookVo);
 			
 			//리다이렉트
