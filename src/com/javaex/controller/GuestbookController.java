@@ -30,8 +30,9 @@ public class GuestbookController extends HttpServlet {
 			request.setAttribute("gList", gList);
 			
 			//포워드 만들기
-			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/addList.jsp");//옮겨갈 경로
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/addList.jsp");
 			rd.forward(request, response);
+			
 		}  else if ("add".equals(act)){
 			//파라미터 꺼내옴
 			String name = request.getParameter("name");
